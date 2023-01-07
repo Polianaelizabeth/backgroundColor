@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="lilas" id="btnl">Lilás</button>
+        <button class="rosa" id="btnr">Rosa</button>
+        <button class="amarelo" id="btna">Amarelo</button>
+        <button class="verde" id="btnv">Verde</button>
+    </div>
+
+    <script>
+        document.getElementById("btnl").addEventListener("click", function(){
+            document.querySelector("body").setAttribute("class", "l")
+        })
+
+        document.getElementById("btnr").addEventListener("click", function(){
+            document.querySelector("body").setAttribute("class", "r")
+        })
+
+        document.getElementById("btna").addEventListener("click", function(){
+            document.querySelector("body").setAttribute("class", "a")
+        })
+
+        document.getElementById("btnv").addEventListener("click", function(){
+            document.querySelector("body").setAttribute("class", "v")
+        })
+    </script>
+</body>
+</html>
